@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utils.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" thread-count="2"
+          name="/Users/sarvesh/Documents/Github/java-selenium-testng/src/test/java/tests/SampleTest.java">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.SampleTest">
+                <methods>
+                    <include name="clickStartHereButton"/>
+                    <include name="verifyStartHereButtonText"/>
+                    <include name="verifySignup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
